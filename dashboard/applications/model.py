@@ -26,19 +26,19 @@ def app():
     
     st.header("engagement button size in pixels")
     eng_width = st.number_input('width of engagement button', key='c')
-    eng_height = st.number_input('height of engagement button', key='c')
+    eng_height = st.number_input('height of engagement button', key='d')
 
     st.header("LAR")
-    eng_width = st.number_input('width of engagement button', key='d')
+    eng_width = st.number_input('width of engagement button', key='e')
 
     st.header("CTA properties")
-    cta_text_word_count = st.number_input('word count', key='d')
-    cta_width = st.number_input('width', key='d')
-    cta_height = st.number_input('height', key='d')
+    cta_text_word_count = st.number_input('word count', key='f')
+    cta_width = st.number_input('width', key='g')
+    cta_height = st.number_input('height', key='h')
     red, green, blue = st.columns([1,1,1])
-    eng_width = st.number_input('width of engagement button', key='d')
-    eng_width = st.number_input('width of engagement button', key='d')
-    eng_width = st.number_input('width of engagement button', key='d')
+    eng_width = st.number_input('width of engagement button', key='i')
+    eng_width = st.number_input('width of engagement button', key='j')
+    eng_width = st.number_input('width of engagement button', key='k')
 
     #total_retransmission = st.number_input('Enter tcp retransmission', key='d')
     #average_delay = st.number_input('Enter average delay', key='e')
