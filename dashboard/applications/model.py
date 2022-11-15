@@ -37,12 +37,18 @@ def app():
     cta_height = st.number_input('height', key='h')
 
     redc, greenc, bluec = st.columns(3)
+    
+
+    form = st.form(key="z")
+    redc, greenc, bluec = st.columns(4)
     with redc:
-        red = st.number_input('red', key='i')
+        red = form.number_input('red', key='i')
     with greenc:
-        green = st.number_input('green', key='j')
+        green = form.number_input('green', key='j')
     with bluec:
-        blue = st.number_input('blue', key='k')
+        blue = form.number_input('blue', key='k')
+
+    
 
     #total_retransmission = st.number_input('Enter tcp retransmission', key='d')
     #average_delay = st.number_input('Enter average delay', key='e')
