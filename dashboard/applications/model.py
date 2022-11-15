@@ -76,7 +76,7 @@ def app():
     with ctaHc:
         cta_height = st.number_input('height', key='m')
         
-    st.subheader('cta color')
+    st.subheader('cta color composition')
     form5 = st.form(key="z")
     redc, greenc, bluec = st.columns(3)
     with redc:
