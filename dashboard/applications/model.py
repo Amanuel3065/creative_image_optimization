@@ -103,6 +103,6 @@ def app():
                 cta_text_word_count, cta_width, cta_height, red, green, blue, logo_width, 
                 logo_height, eng_width, eng_height, preview_width, preview_height]
         val = pickled_model.predict([array])
-        #KPI = [i[0] for i in val][0]
-        st.write(val)
+        KPI = [i[0] for i in val][0]
+        st.write(KPI)
             #"The estimated KPI is: {:.3f}".format(KPI))
