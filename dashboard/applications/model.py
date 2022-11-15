@@ -26,6 +26,14 @@ def app():
     st.subheader('Word count')
     all_text_word_count = st.number_input('Word count', key='a')
 
+    st.subheader('number of objects')
+    form = st.form(key="u")
+    allc, uqec = st.columns(2)
+    with allc:
+        all_objects_count = st.number_input('all objects', key='b')
+    with uqec:
+        unique_objects_count = st.number_input('unique objects', key='c')
+
    
    
     st.subheader('preview height')
@@ -61,7 +69,9 @@ def app():
 
    
     st.header("CTA properties")
+
     cta_text_word_count = st.number_input('word count', key='k')
+    
     st.subheader('size')
     form4 = st.form(key="y")
     ctaWc, ctaHc = st.columns(2)
@@ -74,11 +84,11 @@ def app():
     form5 = st.form(key="z")
     redc, greenc, bluec = st.columns(3)
     with redc:
-        red = form.number_input('red', key='n')
+        red = st.number_input('red', key='n')
     with greenc:
-        green = form.number_input('green', key='o')
+        green = st.number_input('green', key='o')
     with bluec:
-        blue = form.number_input('blue', key='p')
+        blue = st.number_input('blue', key='p')
 
     
 
