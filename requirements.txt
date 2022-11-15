@@ -91,3 +91,4 @@ zipp==3.10.0
 
 plotly
 sklearn
+scikit-learn
