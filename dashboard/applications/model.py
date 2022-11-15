@@ -22,10 +22,11 @@ def app():
 
 
     st.header("About the creative")
-    st.subheader("Word count")
+
+    st.subheader('Word count')
     all_text_word_count = st.number_input('Word count', key='a')
 
-    st.subheader("number of objects")
+    st.subheader('number of objects')
     form = st.form(key="u")
     allc, uqec = st.columns(3)
     with allc:
@@ -33,7 +34,7 @@ def app():
     with uqec:
         unique_objects_count = st.number_input('unique objects', key='c')
    
-    st.subheader("preview height")
+    st.subheader('preview height')
     form = st.form(key="v")
     prevWc, prevHc = st.columns(3)
     with prevWc:
@@ -43,7 +44,7 @@ def app():
    
     
     st.header("engagement button properties")
-    st.subheader("size")
+    st.subheader('size')
     form = st.form(key="w")
     engWc, engHc = st.columns(3)
     with engWc:
@@ -56,7 +57,7 @@ def app():
     st.header("Logo properties")
     
     LAR = st.number_input('logo proportion to preview area', key='h')
-    st.subheader("size")
+    st.subheader('size')
     form = st.form(key="x")
     loWc, loHc = st.columns(3)
     with loWc:
@@ -67,7 +68,7 @@ def app():
    
     st.header("CTA properties")
     cta_text_word_count = st.number_input('word count', key='k')
-    st.subheader("size")
+    st.subheader('size')
     form = st.form(key="y")
     ctaWc, ctaHc = st.columns(3)
     with ctaWc:
@@ -75,7 +76,7 @@ def app():
     with ctaHc:
         cta_height = st.number_input('height', key='m')
         
-    st.subheader("cta color")
+    st.subheader('cta color')
     form = st.form(key="z")
     redc, greenc, bluec = st.columns(3)
     with redc:
