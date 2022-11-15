@@ -27,7 +27,7 @@ def app():
     all_text_word_count = st.number_input('Word count', key='a')
 
     st.subheader('number of objects')
-    form = st.form(key="Form")
+    form = st.form(key="u")
     allc, uqec = st.columns(2)
     with allc:
         all_objects_count = st.number_input('all objects', key='b')
