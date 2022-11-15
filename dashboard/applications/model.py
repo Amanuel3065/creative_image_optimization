@@ -20,55 +20,70 @@ def app():
 
     st.header("To calculate KPI, enter values below.")
 
-    st.header("number of objects")
-    form = st.form(key="w")
+
+    st.header("About the creative")
+    st.subheader("Word count")
+    all_text_word_count = st.number_input('Word count', key='a')
+
+    st.subheader("number of objects")
+    form = st.form(key="u")
     allc, uqec = st.columns(3)
     with allc:
-        all_objects_count = st.number_input('all objects', key='a')
+        all_objects_count = st.number_input('all objects', key='b')
     with uqec:
-        no_of_unique_objects = st.number_input('unique objects', key='b')
+        unique_objects_count = st.number_input('unique objects', key='c')
+   
+    st.subheader("preview height")
+    form = st.form(key="v")
+    prevWc, prevHc = st.columns(3)
+    with prevWc:
+        preview_width = st.number_input('preview width', key='d')
+    with prevHc:
+        preview_height = st.number_input('preview height', key='e')
    
     
-    
-
-
-
     st.header("engagement button properties")
-
-    form = st.form(key="x")
+    st.subheader("size")
+    form = st.form(key="w")
     engWc, engHc = st.columns(3)
     with engWc:
-        eng_width = st.number_input('width of engagement button', key='c')
+        eng_width = st.number_input('width of engagement button', key='f')
     with engHc:
-        eng_height = st.number_input('height of engagement button', key='d')
+        eng_height = st.number_input('height of engagement button', key='g')
         
     
     
-
-    st.header("LAR")
-    LAR = st.number_input('logo proportion', key='e')
-
+    st.header("Logo properties")
+    
+    LAR = st.number_input('logo proportion to preview area', key='h')
+    st.subheader("size")
+    form = st.form(key="x")
+    loWc, loHc = st.columns(3)
+    with loWc:
+        logo_width = st.number_input('width of logo', key='i')
+    with loHc:
+        logo_height = st.number_input('height of logo', key='j')
 
    
     st.header("CTA properties")
-    cta_text_word_count = st.number_input('word count', key='f')
-   
+    cta_text_word_count = st.number_input('word count', key='k')
+    st.subheader("size")
     form = st.form(key="y")
     ctaWc, ctaHc = st.columns(3)
     with ctaWc:
-        cta_width = st.number_input('width', key='g')
+        cta_width = st.number_input('width', key='l')
     with ctaHc:
-        cta_height = st.number_input('height', key='h')
+        cta_height = st.number_input('height', key='m')
         
-
+    st.subheader("cta color")
     form = st.form(key="z")
     redc, greenc, bluec = st.columns(3)
     with redc:
-        red = form.number_input('red', key='i')
+        red = form.number_input('red', key='n')
     with greenc:
-        green = form.number_input('green', key='j')
+        green = form.number_input('green', key='o')
     with bluec:
-        blue = form.number_input('blue', key='k')
+        blue = form.number_input('blue', key='p')
 
     
 
@@ -78,7 +93,9 @@ def app():
     
 
     if st.button('KPI prediction'):
-        array = [no_of_unique_objects, eng_width, eng_height]
+        array = [all_text_word_count, LAR, all_objects_count, unique_objects_count, 
+                cta_text_word_count, cta_width, cta_height, red, green, blue, logo_width, 
+                logo_height, eng_width, eng_height, preview_width, preview_height]
         val = pickled_model.predict([array])
         KPI = [i[0] for i in val][0]
         st.write(
