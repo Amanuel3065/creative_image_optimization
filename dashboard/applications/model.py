@@ -28,7 +28,7 @@ def app():
 
     st.subheader('number of objects')
     form = st.form(key="u")
-    allc, uqec = st.columns(3)
+    allc, uqec = st.columns(2)
     with allc:
         all_objects_count = st.number_input('all objects', key='b')
     with uqec:
@@ -36,7 +36,7 @@ def app():
    
     st.subheader('preview height')
     form1 = st.form(key="v")
-    prevWc, prevHc = st.columns(3)
+    prevWc, prevHc = st.columns(2)
     with prevWc:
         preview_width = st.number_input('preview width', key='d')
     with prevHc:
@@ -46,7 +46,7 @@ def app():
     st.header("engagement button properties")
     st.subheader('size')
     form2 = st.form(key="w")
-    engWc, engHc = st.columns(3)
+    engWc, engHc = st.columns(2)
     with engWc:
         eng_width = st.number_input('width of engagement button', key='f')
     with engHc:
@@ -59,7 +59,7 @@ def app():
     LAR = st.number_input('logo proportion to preview area', key='h')
     st.subheader('size')
     form3 = st.form(key="x")
-    loWc, loHc = st.columns(3)
+    loWc, loHc = st.columns(2)
     with loWc:
         logo_width = st.number_input('width of logo', key='i')
     with loHc:
@@ -70,7 +70,7 @@ def app():
     cta_text_word_count = st.number_input('word count', key='k')
     st.subheader('size')
     form4 = st.form(key="y")
-    ctaWc, ctaHc = st.columns(3)
+    ctaWc, ctaHc = st.columns(2)
     with ctaWc:
         cta_width = st.number_input('width', key='l')
     with ctaHc:
