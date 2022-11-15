@@ -104,5 +104,5 @@ def app():
                 logo_height, eng_width, eng_height, preview_width, preview_height]
         val = pickled_model.predict([array])
         #KPI = [i[0] for i in val][0]
-        st.write(
-            "The estimated KPI is: {:.3f}".format(val))
+        st.write(val)
+            #"The estimated KPI is: {:.3f}".format(KPI))
