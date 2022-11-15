@@ -35,10 +35,14 @@ def app():
     cta_text_word_count = st.number_input('word count', key='f')
     cta_width = st.number_input('width', key='g')
     cta_height = st.number_input('height', key='h')
-    red, green, blue = st.columns([1,1,1])
-    red = st.number_input('red', key='i')
-    green = st.number_input('green', key='j')
-    blue = st.number_input('blue', key='k')
+
+    redc, greenc, bluec = st.columns(3)
+    with redc:
+        red = st.number_input('red', key='i')
+    with greenc:
+        green = st.number_input('green', key='j')
+    with bluec:
+        blue = st.number_input('blue', key='k')
 
     #total_retransmission = st.number_input('Enter tcp retransmission', key='d')
     #average_delay = st.number_input('Enter average delay', key='e')
