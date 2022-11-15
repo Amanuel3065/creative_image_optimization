@@ -5,7 +5,7 @@ import streamlit as st
 from pickle import load
 import numpy as np
 import sys
-from sklearn import *
+
 
 
 
