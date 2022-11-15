@@ -20,10 +20,26 @@ def app():
 
     st.header("To calculate KPI, enter values below.")
 
-    st.header("")
-    no_of_unique_objects = st.number_input('unique objects', key='a')
-    eng_width = st.number_input('width of engagement button', key='b')
+    st.header("number of objects")
+    all_objects_count = st.number_input('all objects', key='a')
+    no_of_unique_objects = st.number_input('unique objects', key='b')
+    
+    st.header("engagement button size in pixels")
+    eng_width = st.number_input('width of engagement button', key='c')
     eng_height = st.number_input('height of engagement button', key='c')
+
+    st.header("LAR")
+    eng_width = st.number_input('width of engagement button', key='d')
+
+    st.header("CTA properties")
+    cta_text_word_count = st.number_input('word count', key='d')
+    cta_width = st.number_input('width', key='d')
+    cta_height = st.number_input('height', key='d')
+    red, green, blue = st.columns([1,1,1])
+    eng_width = st.number_input('width of engagement button', key='d')
+    eng_width = st.number_input('width of engagement button', key='d')
+    eng_width = st.number_input('width of engagement button', key='d')
+
     #total_retransmission = st.number_input('Enter tcp retransmission', key='d')
     #average_delay = st.number_input('Enter average delay', key='e')
     #total_throughput = st.number_input('Enter average throughput', key='f')
