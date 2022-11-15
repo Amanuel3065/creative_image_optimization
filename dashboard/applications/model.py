@@ -35,7 +35,7 @@ def app():
         unique_objects_count = st.number_input('unique objects', key='c')
    
     st.subheader('preview height')
-    form = st.form(key="v")
+    form1 = st.form(key="v")
     prevWc, prevHc = st.columns(3)
     with prevWc:
         preview_width = st.number_input('preview width', key='d')
@@ -45,7 +45,7 @@ def app():
     
     st.header("engagement button properties")
     st.subheader('size')
-    form = st.form(key="w")
+    form2 = st.form(key="w")
     engWc, engHc = st.columns(3)
     with engWc:
         eng_width = st.number_input('width of engagement button', key='f')
@@ -58,7 +58,7 @@ def app():
     
     LAR = st.number_input('logo proportion to preview area', key='h')
     st.subheader('size')
-    form = st.form(key="x")
+    form3 = st.form(key="x")
     loWc, loHc = st.columns(3)
     with loWc:
         logo_width = st.number_input('width of logo', key='i')
@@ -69,7 +69,7 @@ def app():
     st.header("CTA properties")
     cta_text_word_count = st.number_input('word count', key='k')
     st.subheader('size')
-    form = st.form(key="y")
+    form4 = st.form(key="y")
     ctaWc, ctaHc = st.columns(3)
     with ctaWc:
         cta_width = st.number_input('width', key='l')
@@ -77,7 +77,7 @@ def app():
         cta_height = st.number_input('height', key='m')
         
     st.subheader('cta color')
-    form = st.form(key="z")
+    form5 = st.form(key="z")
     redc, greenc, bluec = st.columns(3)
     with redc:
         red = form.number_input('red', key='n')
