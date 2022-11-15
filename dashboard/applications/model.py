@@ -26,42 +26,42 @@ def app():
     st.subheader('Word count')
     all_text_word_count = st.number_input('Word count', key='a')
 
+    LAR = st.number_input('logo proportion to preview area', key='b')
+
     st.subheader('number of objects')
     #form = st.form(key="u")
     allc, uqec = st.columns(2)
     with allc:
-        all_objects_count = st.number_input('all objects', key='b')
+        all_objects_count = st.number_input('all objects', key='c')
     with uqec:
-        unique_objects_count = st.number_input('unique objects', key='c')
+        unique_objects_count = st.number_input('unique objects', key='d')
 
    
    
     st.subheader('preview height')
-    form1 = st.form(key="v")
+    #form1 = st.form(key="v")
     prevWc, prevHc = st.columns(2)
     with prevWc:
-        preview_width = st.number_input('preview width', key='d')
+        preview_width = st.number_input('preview width', key='e')
     with prevHc:
-        preview_height = st.number_input('preview height', key='e')
+        preview_height = st.number_input('preview height', key='f')
    
     
     st.header("engagement button properties")
     st.subheader('size')
-    form2 = st.form(key="w")
+    #form2 = st.form(key="w")
     engWc, engHc = st.columns(2)
     with engWc:
-        eng_width = st.number_input('width of engagement button', key='f')
+        eng_width = st.number_input('width of engagement button', key='g')
     with engHc:
-        eng_height = st.number_input('height of engagement button', key='g')
+        eng_height = st.number_input('height of engagement button', key='h')
         
     
     
     st.header("Logo properties")
     
-    LAR = st.number_input('logo proportion to preview area', key='h')
-
     st.subheader('size')
-    form3 = st.form(key="x")
+    #form3 = st.form(key="x")
     loWc, loHc = st.columns(2)
     with loWc:
         logo_width = st.number_input('width of logo', key='i')
@@ -74,7 +74,7 @@ def app():
     cta_text_word_count = st.number_input('word count', key='k')
     
     st.subheader('size')
-    form4 = st.form(key="y")
+    #form4 = st.form(key="y")
     ctaWc, ctaHc = st.columns(2)
     with ctaWc:
         cta_width = st.number_input('width', key='l')
@@ -82,7 +82,7 @@ def app():
         cta_height = st.number_input('height', key='m')
         
     st.subheader('cta color composition')
-    form5 = st.form(key="z")
+    #form5 = st.form(key="z")
     redc, greenc, bluec = st.columns(3)
     with redc:
         red = st.number_input('red', key='n')
